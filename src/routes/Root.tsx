@@ -1,11 +1,17 @@
-import Main from '../../components/Main';
+import { Outlet } from 'react-router-dom';
+
+import Footer from '../../components/Footer';
 import Nav from '../../components/Nav';
+import StyledHeader from '../../components-ui/StyledHeader';
 
 const Root = () => {
   return (
     <>
-      <Nav></Nav>
-      <Main></Main>
+      <StyledHeader>
+        <Nav />
+      </StyledHeader>
+      <Outlet />
+      <Footer />
     </>
   );
 };
