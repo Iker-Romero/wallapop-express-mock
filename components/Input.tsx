@@ -6,6 +6,7 @@ export interface InputType {
   type: string;
   color?: string;
   backgroundColor?: string;
+  placeholder?: string;
 }
 
 const Input = (props: InputType) => {
