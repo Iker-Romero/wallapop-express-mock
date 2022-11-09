@@ -1,14 +1,9 @@
-import React from 'react';
-
 import StyledButton from '../components-ui/StyledButton';
-
-interface ButtonType {
-  text: string;
-}
+import { ButtonType } from '../src/SharedTypes';
 
 const Button = (props: ButtonType) => {
   const { text } = props;
-  return <StyledButton>{text}</StyledButton>;
+  return <StyledButton {...props}>{text}</StyledButton>;
 };
 
 export default Button;

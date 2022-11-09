@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: "Gentleman";
-    src: url(/fonts/Gentleman-PersonalUse.ttf);
+    font-family: "Gentleman-Bold";
+    src: url(/fonts/Gentleman-Bold.woff);
   }
 
   :root {
@@ -13,7 +13,14 @@ const GlobalStyle = createGlobalStyle`
     --background: "#ffffff";
     --section-background: "#385ef9";
 
-    font-family: "Gentleman";
+    font-family: "Gentleman-Bold";
+  }
+
+  * {
+    font-family: "Gentleman-Bold";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 `;
 
