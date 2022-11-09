@@ -6,23 +6,29 @@ interface FlexType {
   wrap?: string;
   justify?: string;
   align?: string;
+  backgroundColor?: string;
+  height?: string;
+  padding?: string;
+  flex?: string;
 }
 
 const Flex = styled.div`
   display: flex;
 
   ${(props: FlexType) => {
-    const { dir, gap, wrap, justify, align } = props;
+    const { dir, gap, wrap, justify, align, backgroundColor, height, padding, flex } =
+      props;
 
     return css`
       flex-direction: ${dir};
       gap: ${gap};
-      ${wrap &&
-      css`
-        flex-wrap: wrap;
-      `};
+      flex-wrap: ${wrap};
       justify-content: ${justify};
       align-items: ${align};
+      background-color: ${backgroundColor};
+      height: ${height};
+      padding: ${padding};
+      flex: ${flex};
     `;
   }}
 `;

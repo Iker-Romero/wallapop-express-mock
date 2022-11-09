@@ -7,16 +7,16 @@ const StyledInput = styled.input.attrs((props: InputType) => `type: ${props.type
   flex: 1 1 auto;
 
   ${(props: InputType) => {
-    const { color, backgroundColor, height, border, borderColor, borderRadius, padding } =
+    const { color, backgroundColor, height, border, borderRadius, padding, justifySelf } =
       props;
     return css`
       color: ${color};
       background-color: ${backgroundColor};
       height: ${height};
       border: ${border};
-      border-color: ${borderColor};
       border-radius: ${borderRadius};
       padding: ${padding};
+      justify-self: ${justifySelf};
     `;
   }}
 `;

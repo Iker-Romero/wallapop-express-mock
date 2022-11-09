@@ -4,10 +4,20 @@ import { css } from 'styled-components';
 import { ButtonType } from '../src/SharedTypes';
 
 const StyledButton = styled.button`
-  height: 3rem;
-  background-color: var(--highlight);
+  width: fit-content;
+
   ${(props: ButtonType) => {
-    const { color, backgroundColor, height, border, borderRadius, padding } = props;
+    const {
+      color,
+      backgroundColor,
+      height,
+      border,
+      borderRadius,
+      padding,
+      justifySelf,
+      alignSelf,
+    } = props;
+
     return css`
       color: ${color};
       background-color: ${backgroundColor};
@@ -15,6 +25,8 @@ const StyledButton = styled.button`
       border: ${border};
       border-radius: ${borderRadius};
       padding: ${padding};
+      justify-self: ${justifySelf};
+      align-self: ${alignSelf};
     `;
   }}
 `;

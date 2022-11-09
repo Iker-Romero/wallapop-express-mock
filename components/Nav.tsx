@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import Flex from '../components-ui/Flex';
 import NavStyle from '../components-ui/StyledNav';
-import GlobalStyle from '../src/GlobalStyles';
+import GlobalStyle from '../src/GlobalStyle';
 import theme from '../src/theme';
 import Button from './Button';
 import Input from './Input';
@@ -29,23 +29,25 @@ const Nav = () => {
       />
       <Flex gap="0.5rem">
         <Button
-          text="Regístrate o inicia sesión"
           color={theme.highlight}
           backgroundColor={theme.background}
           height="3rem"
           border={`1px solid ${theme.highlight}`}
           borderRadius="1.5rem"
           padding="0 1.5rem"
-        />
+        >
+          Regístrate o inicia sesión
+        </Button>
         <Button
-          text="Subir producto"
           color={theme.background}
           backgroundColor={theme.highlight}
-          height="3rem"
           border={`1px solid ${theme.highlight}`}
+          height="3rem"
           borderRadius="1.5rem"
           padding="0 1.5rem"
-        />
+        >
+          Subir producto
+        </Button>
       </Flex>
     </NavStyle>
   );

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from '../../components/Footer';
 import Nav from '../../components/Nav';
 import StyledHeader from '../../components-ui/StyledHeader';
-import GlobalStyle from '../GlobalStyles';
+import GlobalStyle from '../GlobalStyle';
 import theme from '../theme';
 
 const Root = () => {

@@ -139,11 +139,17 @@ const GlobalStyle = createGlobalStyle`
     src: url(/fonts/Gentleman-Bold.woff);
   }
 
+  :root {
+    font-family: "Gentleman-Bold";
+  }
+
   * {
     font-family: "Gentleman-Bold";
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  }
+
+  img {
+    display: block;
   }
 `;
 

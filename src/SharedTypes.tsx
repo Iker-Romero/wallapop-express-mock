@@ -5,6 +5,8 @@ export interface InputAndButton {
   border?: string;
   borderRadius?: string;
   padding?: string;
+  justifySelf?: string;
+  alignSelf?: string;
 }
 
 export interface InputType extends InputAndButton {
@@ -13,5 +15,9 @@ export interface InputType extends InputAndButton {
 }
 
 export interface ButtonType extends InputAndButton {
-  text: string;
+  children: string | JSX.Element;
+}
+
+export interface HeadingType {
+  color: string;
 }
