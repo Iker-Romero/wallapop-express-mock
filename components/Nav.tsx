@@ -18,32 +18,34 @@ const Nav = () => {
       </NavLink>
       <Input
         type="text"
-        color="var(--primary)"
-        backgroundColor="var(--background)"
+        color={theme.primary}
+        backgroundColor={theme.background}
         placeholder="Buscar en Todas las categorías"
         height="3rem"
         border={`1px solid ${theme.primary}`}
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
-      <Button
-        text="Regístrate o inicia sesión"
-        color="var(--primary)"
-        backgroundColor="var(--background)"
-        height="3rem"
-        border={`1px solid ${theme.primary}`}
-        borderRadius="1.5rem"
-        padding="0 1.5rem"
-      />
-      <Button
-        text="Subir producto"
-        color="var(--primary)"
-        backgroundColor={theme.highlight}
-        height="3rem"
-        border={`1px solid ${theme.highlight}`}
-        borderRadius="1.5rem"
-        padding="0 1.5rem"
-      />
+      <div>
+        <Button
+          text="Regístrate o inicia sesión"
+          color={theme.highlight}
+          backgroundColor={theme.background}
+          height="3rem"
+          border={`1px solid ${theme.highlight}`}
+          borderRadius="1.5rem"
+          padding="0 1.5rem"
+        />
+        <Button
+          text="Subir producto"
+          color={theme.background}
+          backgroundColor={theme.highlight}
+          height="3rem"
+          border={`1px solid ${theme.highlight}`}
+          borderRadius="1.5rem"
+          padding="0 1.5rem"
+        />
+      </div>
     </NavStyle>
   );
 };
