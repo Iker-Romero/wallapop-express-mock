@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
+import Flex from '../components-ui/Flex';
 import NavStyle from '../components-ui/StyledNav';
 import GlobalStyle from '../src/GlobalStyles';
 import theme from '../src/theme';
@@ -26,7 +27,7 @@ const Nav = () => {
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
-      <div>
+      <Flex gap="0.5rem">
         <Button
           text="Regístrate o inicia sesión"
           color={theme.highlight}
@@ -45,7 +46,7 @@ const Nav = () => {
           borderRadius="1.5rem"
           padding="0 1.5rem"
         />
-      </div>
+      </Flex>
     </NavStyle>
   );
 };
