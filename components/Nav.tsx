@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import NavStyle from '../components-ui/StyledNav';
 import GlobalStyle from '../src/GlobalStyles';
+import theme from '../src/theme';
 import Button from './Button';
 import Input from './Input';
 
@@ -21,8 +22,7 @@ const Nav = () => {
         backgroundColor="var(--background)"
         placeholder="Buscar en Todas las categorías"
         height="3rem"
-        border="1px solid"
-        borderColor="var(--primary)"
+        border={`1px solid ${theme.primary}`}
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
@@ -31,18 +31,16 @@ const Nav = () => {
         color="var(--primary)"
         backgroundColor="var(--background)"
         height="3rem"
-        border="1px solid"
-        borderColor="var(--primary)"
+        border={`1px solid ${theme.primary}`}
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
       <Button
         text="Subir producto"
         color="var(--primary)"
-        backgroundColor="var(--background)"
+        backgroundColor={theme.highlight}
         height="3rem"
-        border="1px solid"
-        borderColor="var(--primary)"
+        border={`1px solid ${theme.highlight}`}
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />

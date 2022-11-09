@@ -3,7 +3,6 @@ export interface InputAndButton {
   backgroundColor: string;
   height: string;
   border?: string;
-  borderColor?: string;
   borderRadius?: string;
   padding?: string;
 }
