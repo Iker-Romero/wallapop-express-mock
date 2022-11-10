@@ -8,8 +8,8 @@ import StyledFooter from '../components-ui/StyledFooter';
 const Footer = () => {
   return (
     <StyledFooter maxWidth="70rem" alignSelf="center">
-      <Flex wrap="wrap" gap="1rem" padding="1rem" justify="center">
-        <Flex dir="column" gap="1ren" width="min-content">
+      <Flex wrap="wrap" gap="1rem" justify="center">
+        <Flex dir="column" width="min-content">
           <Image
             src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"
             alt="Wallapop navigation bar logo"
