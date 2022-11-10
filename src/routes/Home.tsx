@@ -1,8 +1,8 @@
 import Button from '../../components/Button';
+import Image from '../../components/Image';
 import Flex from '../../components-ui/Flex';
 import H1 from '../../components-ui/H1';
 import H2 from '../../components-ui/H2';
-import IMG from '../../components-ui/IMG';
 import theme from '../theme';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         backgroundColor={theme.sectionBackground}
         justify="center"
         gap="1rem"
-        padding="1rem"
+        padding="2rem 1rem"
       >
         <Flex dir="column" justify="center" gap="2rem">
           <H1 color="white">A quien madruga Wallapop PRO le ayuda</H1>
@@ -27,12 +27,12 @@ const Home = () => {
             border={`1px solid ${theme.highlight}`}
             borderRadius="1.5rem"
             padding="0 1.5rem"
-            alignSelf="center"
+            font="Gentleman-Bold"
           >
             Más información
           </Button>
         </Flex>
-        <IMG
+        <Image
           width="max-content"
           src="https://es.wallapop.com/images/home/pro/pro-banner.svg"
           alt=""

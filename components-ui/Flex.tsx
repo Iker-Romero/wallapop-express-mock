@@ -8,16 +8,30 @@ interface FlexType {
   align?: string;
   backgroundColor?: string;
   height?: string;
+  width?: string;
+  maxWidth?: string;
   padding?: string;
   flex?: string;
+  margin?: string;
 }
 
 const Flex = styled.div`
   display: flex;
 
   ${(props: FlexType) => {
-    const { dir, gap, wrap, justify, align, backgroundColor, height, padding, flex } =
-      props;
+    const {
+      dir,
+      gap,
+      wrap,
+      justify,
+      align,
+      backgroundColor,
+      height,
+      width,
+      maxWidth,
+      padding,
+      flex,
+    } = props;
 
     return css`
       flex-direction: ${dir};
@@ -27,6 +41,8 @@ const Flex = styled.div`
       align-items: ${align};
       background-color: ${backgroundColor};
       height: ${height};
+      width: ${width};
+      max-width: ${maxWidth};
       padding: ${padding};
       flex: ${flex};
     `;

@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 import { HeadingType } from '../src/SharedTypes';
 
 const H2 = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   ${(props: HeadingType) => {
     const { color } = props;

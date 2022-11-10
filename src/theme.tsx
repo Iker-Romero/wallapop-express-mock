@@ -6,6 +6,4 @@ const theme = {
   sectionBackground: '#385ef9',
 };
 
-// export const { primary, secondary, highlight, background, sectionBackground } = theme;
-
 export default theme;

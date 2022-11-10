@@ -7,6 +7,7 @@ export interface InputAndButton {
   padding?: string;
   justifySelf?: string;
   alignSelf?: string;
+  font?: string;
 }
 
 export interface InputType extends InputAndButton {

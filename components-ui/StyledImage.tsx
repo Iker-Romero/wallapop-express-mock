@@ -1,13 +1,9 @@
 import styled, { css } from 'styled-components';
 
-interface IMGType {
-  height?: string;
-  width?: string;
-  flex?: string;
-}
+const StyledImage = styled.img`
+  object-fit: contain;
 
-const IMG = styled.img`
-  ${(props: IMGType) => {
+  ${(props: ImageType) => {
     const { height, width, flex } = props;
 
     return css`
@@ -18,4 +14,4 @@ const IMG = styled.img`
   }}
 `;
 
-export default IMG;
+export default StyledImage;

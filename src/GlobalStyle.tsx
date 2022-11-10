@@ -138,18 +138,34 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Gentleman-Bold";
     src: url(/fonts/Gentleman-Bold.woff);
   }
+  
+  @font-face {
+    font-family: "Gentleman-Regular";
+    src: url(/fonts/Gentleman-Regular.woff);
+  }
 
   :root {
     font-family: "Gentleman-Bold";
+    font-family: "Gentleman-Regular";
   }
 
   * {
     font-family: "Gentleman-Bold";
+    font-family: "Gentleman-Regular";
     box-sizing: border-box;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
   }
 
   img {
     display: block;
+  }
+
+  p, a {
+    line-height: 1.5rem;
   }
 `;
 

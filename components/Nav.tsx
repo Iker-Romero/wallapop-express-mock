@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
+import Image from '../components/Image';
 import Flex from '../components-ui/Flex';
 import NavStyle from '../components-ui/StyledNav';
 import GlobalStyle from '../src/GlobalStyle';
@@ -12,7 +13,7 @@ const Nav = () => {
     <NavStyle>
       <GlobalStyle />
       <NavLink to="">
-        <img
+        <Image
           src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"
           alt="Wallapop navigation bar logo"
         />
@@ -45,6 +46,7 @@ const Nav = () => {
           height="3rem"
           borderRadius="1.5rem"
           padding="0 1.5rem"
+          font="Gentleman-Bold"
         >
           Subir producto
         </Button>

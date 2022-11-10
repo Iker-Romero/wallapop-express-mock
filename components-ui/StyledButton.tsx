@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ButtonType } from '../src/SharedTypes';
 
@@ -16,6 +15,7 @@ const StyledButton = styled.button`
       padding,
       justifySelf,
       alignSelf,
+      font,
     } = props;
 
     return css`
@@ -27,6 +27,7 @@ const StyledButton = styled.button`
       padding: ${padding};
       justify-self: ${justifySelf};
       align-self: ${alignSelf};
+      font-family: ${font};
     `;
   }}
 `;
