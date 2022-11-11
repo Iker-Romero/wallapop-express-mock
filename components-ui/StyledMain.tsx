@@ -7,6 +7,7 @@ const StyledMain = styled.main`
   flex: 1 0 auto;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5rem;
 `;
 
 export default StyledMain;
