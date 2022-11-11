@@ -1,10 +1,10 @@
-import StyledButton from '../components-ui/StyledButton';
+import ButtonUI from '../components-ui/ButtonUI';
 import { ButtonType } from '../src/SharedTypes';
 
 const Button = (props: ButtonType) => {
   const { children } = props;
 
-  return <StyledButton {...props}>{children}</StyledButton>;
+  return <ButtonUI {...props}>{children}</ButtonUI>;
 };
 
 export default Button;

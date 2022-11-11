@@ -15,10 +15,6 @@ export interface InputType extends InputAndButton {
   placeholder?: string;
 }
 
-export interface ButtonType extends InputAndButton {
-  children: string | JSX.Element;
-}
-
 export interface HeadingType {
   color: string;
 }

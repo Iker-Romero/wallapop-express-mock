@@ -20,17 +20,7 @@ const Home = () => {
             ¿Tienes un negocio y quieres empezar a vender online? Descubre nuestras
             soluciones para impulsar tus ventas. ¡Al lío!
           </H2>
-          <Button
-            color={theme.background}
-            backgroundColor={theme.highlight}
-            height="3rem"
-            border={`1px solid ${theme.highlight}`}
-            borderRadius="1.5rem"
-            padding="0 1.5rem"
-            font="Gentleman-Bold"
-          >
-            Más información
-          </Button>
+          <Button variant="highlight">Más información</Button>
         </Flex>
         <Image
           width="max-content"
