@@ -145,12 +145,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    font-family: "Gentleman-Bold";
     font-family: "Gentleman-Regular";
   }
 
   * {
-    font-family: "Gentleman-Bold";
     font-family: "Gentleman-Regular";
     box-sizing: border-box;
   }

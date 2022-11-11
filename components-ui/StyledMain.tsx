@@ -6,6 +6,7 @@ const StyledMain = styled.main`
   height: 100%;
   flex: 1 0 auto;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export default StyledMain;
