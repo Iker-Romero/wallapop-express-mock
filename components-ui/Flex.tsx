@@ -13,10 +13,18 @@ interface FlexType {
   padding?: string;
   flex?: string;
   margin?: string;
+  overflow?: string;
+  textAlign?: string;
+  position?: string;
+  top?: string;
+  left?: string;
+  rigth?: string;
+  zIndex?: string;
 }
 
 const Flex = styled.div`
   display: flex;
+  overflow: hidden;
 
   ${(props: FlexType) => {
     const {
@@ -31,6 +39,13 @@ const Flex = styled.div`
       maxWidth,
       padding,
       flex,
+      margin,
+      textAlign,
+      position,
+      top,
+      left,
+      right,
+      zIndex,
     } = props;
 
     return css`
@@ -45,6 +60,13 @@ const Flex = styled.div`
       max-width: ${maxWidth};
       padding: ${padding};
       flex: ${flex};
+      margin: ${margin};
+      text-align: ${textAlign};
+      position: ${position};
+      top: ${top};
+      left: ${left};
+      right: ${right};
+      z-index: ${zIndex};
     `;
   }}
 `;

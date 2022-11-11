@@ -1,4 +1,5 @@
 import Button from '../../components/Button';
+import Carousel from '../../components/Carousel';
 import Image from '../../components/Image';
 import Flex from '../../components-ui/Flex';
 import H1 from '../../components-ui/H1';
@@ -135,11 +136,16 @@ const Home = () => {
   return (
     <>
       <P>Wallapop, la plataforma líder de compraventa de productos de segunda mano</P>
+      <Flex dir="column" maxWidth="100%" padding="2rem 0" gap="1rem" textAlign="center">
+        <H1>¿Qué estás buscando hoy?</H1>
+        <Carousel cards={categories} />
+      </Flex>
       <Flex
         backgroundColor={theme.sectionBackground}
         justify="center"
         gap="1rem"
         padding="2rem 1rem"
+        width="100%"
       >
         <Flex dir="column" justify="center" gap="2rem">
           <H1 color="white">A quien madruga Wallapop PRO le ayuda</H1>
