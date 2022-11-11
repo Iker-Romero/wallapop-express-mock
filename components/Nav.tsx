@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import Image from '../components/Image';
-import Flex from '../components-ui/Flex';
+import Div from '../components-ui/Div';
 import NavStyle from '../components-ui/StyledNav';
 import GlobalStyle from '../src/GlobalStyle';
 import theme from '../src/theme';
@@ -28,10 +28,10 @@ const Nav = () => {
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
-      <Flex gap="0.5rem">
+      <Div display="flex" gap="0.5rem">
         <Button variant="regular">Regístrate o inicia sesión</Button>
         <Button variant="highlight">Subir producto</Button>
-      </Flex>
+      </Div>
     </NavStyle>
   );
 };

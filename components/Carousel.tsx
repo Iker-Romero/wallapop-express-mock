@@ -1,12 +1,42 @@
+import { useEffect, useState } from 'react';
+
 import Image from '../components/Image';
-import Flex from '../components-ui/Flex';
+import Div from '../components-ui/Div';
 import P from '../components-ui/P';
 
 const Carousel = (props) => {
   const { cards } = props;
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lenght, setLenght] = useState(cards.lenght);
+
+  useEffect(() => {
+    setLenght(cards.lenght);
+  }, [cards.lenght]);
+
+  const next = () => {
+    if (currentIndex < lenght - 1) {
+      setCurrentIndex((prevState) => prevState + 1);
+    }
+  };
+
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevState) => prevState - 1);
+    }
+  };
+
   return (
-    <Flex maxWidth="70rem" position="relative">
-      <Flex justify="center" align="center" zIndex="2" flex="1 0 4rem">
+    <Div display="flex" maxWidth="70rem" position="relative">
+      {/* Previous Arrow */}
+      <Div
+        display="flex"
+        onClick={prev}
+        justify="center"
+        align="center"
+        zIndex="2"
+        Div="1 0 4rem"
+      >
         <svg
           width="48"
           height="48"
@@ -15,28 +45,46 @@ const Carousel = (props) => {
         >
           <path d="M21.2 23.4a.998.998 0 0 0 0 1.2l3 4a.999.999 0 1 0 1.6-1.199L23.25 24l2.55-3.402a.997.997 0 0 0-.2-1.399 1 1 0 0 0-1.4.2l-3 4z"></path>
         </svg>
-      </Flex>
-      <Flex gap="1rem">
+      </Div>
+      {/* Carousel slides */}
+      <Div
+        display="flex"
+        overflow="hidden"
+        gap="1rem"
+        transform={`translateX(-${currentIndex * 100}%)`}
+      >
         {cards.map((card) => {
           const { img, hover, title } = card;
 
           return (
-            <Flex
+            <Div
+              display="flex"
               key={title}
               width="10rem"
               dir="column"
-              flex="1 0 auto"
+              Div="1 0 auto"
               justify="center"
               align="center"
               textAlign="center"
             >
               <Image src={img} width="5rem" />
               <P>{title}</P>
-            </Flex>
+            </Div>
           );
         })}
-      </Flex>
-      <Flex justify="center" align="center" zIndex="2" flex="1 0 4rem">
+      </Div>
+      {/* Next Arrow */}
+      <Div
+        display="flex"
+        onClick={() => {
+          console.log('next');
+          next();
+        }}
+        justify="center"
+        align="center"
+        zIndex="2"
+        Div="1 0 4rem"
+      >
         <svg
           width="48"
           height="48"
@@ -45,8 +93,8 @@ const Carousel = (props) => {
         >
           <path d="M26.8 24.6a.998.998 0 0 0 0-1.2l-3-4a.999.999 0 1 0-1.6 1.199l2.55 3.4-2.55 3.402a.997.997 0 0 0 .2 1.399 1 1 0 0 0 1.4-.2l3-4z"></path>
         </svg>
-      </Flex>
-    </Flex>
+      </Div>
+    </Div>
   );
 };
 

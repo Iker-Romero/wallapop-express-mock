@@ -1,33 +1,11 @@
 import styled, { css } from 'styled-components';
 
-interface FlexType {
-  dir?: string;
-  gap?: string;
-  wrap?: string;
-  justify?: string;
-  align?: string;
-  backgroundColor?: string;
-  height?: string;
-  width?: string;
-  maxWidth?: string;
-  padding?: string;
-  flex?: string;
-  margin?: string;
-  overflow?: string;
-  textAlign?: string;
-  position?: string;
-  top?: string;
-  left?: string;
-  rigth?: string;
-  zIndex?: string;
-}
+import { DivType } from '../src/SharedTypes';
 
-const Flex = styled.div`
-  display: flex;
-  overflow: hidden;
-
-  ${(props: FlexType) => {
+const Div = styled.div`
+  ${(props: DivType) => {
     const {
+      display,
       dir,
       gap,
       wrap,
@@ -46,9 +24,12 @@ const Flex = styled.div`
       left,
       right,
       zIndex,
+      transform,
+      overflow,
     } = props;
 
     return css`
+      display: ${display};
       flex-direction: ${dir};
       gap: ${gap};
       flex-wrap: ${wrap};
@@ -67,8 +48,10 @@ const Flex = styled.div`
       left: ${left};
       right: ${right};
       z-index: ${zIndex};
+      transform: ${transform};
+      overflow: ${overflow};
     `;
   }}
 `;
 
-export default Flex;
+export default Div;

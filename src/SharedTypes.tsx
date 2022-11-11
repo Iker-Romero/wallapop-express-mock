@@ -18,3 +18,27 @@ export interface InputType extends InputAndButton {
 export interface HeadingType {
   color: string;
 }
+
+export interface DivType {
+  display?: string;
+  dir?: string;
+  gap?: string;
+  wrap?: string;
+  justify?: string;
+  align?: string;
+  backgroundColor?: string;
+  height?: string;
+  width?: string;
+  maxWidth?: string;
+  padding?: string;
+  flex?: string;
+  margin?: string;
+  overflow?: string;
+  textAlign?: string;
+  position?: string;
+  top?: string;
+  left?: string;
+  rigth?: string;
+  zIndex?: string;
+  transform?: string;
+}

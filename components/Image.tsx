@@ -5,7 +5,7 @@ interface ImageType {
   alt?: string;
   height?: string;
   width?: string;
-  flex?: string;
+  Div?: string;
 }
 
 const Image = (props: ImageType) => {

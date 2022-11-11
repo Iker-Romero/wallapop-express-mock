@@ -1,7 +1,7 @@
 import Button from '../../components/Button';
 import Carousel from '../../components/Carousel';
 import Image from '../../components/Image';
-import Flex from '../../components-ui/Flex';
+import Div from '../../components-ui/Div';
 import H1 from '../../components-ui/H1';
 import H2 from '../../components-ui/H2';
 import P from '../../components-ui/P';
@@ -136,31 +136,39 @@ const Home = () => {
   return (
     <>
       <P>Wallapop, la plataforma líder de compraventa de productos de segunda mano</P>
-      <Flex dir="column" maxWidth="100%" padding="2rem 0" gap="1rem" textAlign="center">
+      <Div
+        display="flex"
+        dir="column"
+        maxWidth="100%"
+        padding="2rem 0"
+        gap="1rem"
+        textAlign="center"
+      >
         <H1>¿Qué estás buscando hoy?</H1>
         <Carousel cards={categories} />
-      </Flex>
-      <Flex
+      </Div>
+      <Div
+        display="flex"
         backgroundColor={theme.sectionBackground}
         justify="center"
         gap="1rem"
         padding="2rem 1rem"
         width="100%"
       >
-        <Flex dir="column" justify="center" gap="2rem">
+        <Div display="flex" dir="column" justify="center" gap="2rem">
           <H1 color="white">A quien madruga Wallapop PRO le ayuda</H1>
           <H2 color="white">
             ¿Tienes un negocio y quieres empezar a vender online? Descubre nuestras
             soluciones para impulsar tus ventas. ¡Al lío!
           </H2>
           <Button variant="highlight">Más información</Button>
-        </Flex>
+        </Div>
         <Image
           width="max-content"
           src="https://es.wallapop.com/images/home/pro/pro-banner.svg"
           alt=""
         />
-      </Flex>
+      </Div>
     </>
   );
 };
