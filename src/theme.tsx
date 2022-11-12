@@ -4,6 +4,7 @@ const theme = {
   highlight: '#13c1ac',
   background: '#ffffff',
   sectionBackground: '#385ef9',
+  sectionBackground2: '#EDEFF1',
 };
 
 export default theme;

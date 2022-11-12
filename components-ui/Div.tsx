@@ -27,6 +27,12 @@ const Div = styled.div`
       transform,
       overflow,
       transition,
+      templateColumns,
+      templateRows,
+      templateAreas,
+      area,
+      objectFit,
+      borderRadius,
     } = props;
 
     return css`
@@ -52,6 +58,12 @@ const Div = styled.div`
       transform: ${transform};
       overflow: ${overflow};
       transition: ${transition};
+      grid-template-columns: ${templateColumns};
+      grid-tempalte-rows: ${templateRows};
+      grid-template-areas: ${templateAreas};
+      grid-area: ${area};
+      object-fit: ${objectFit};
+      border-radius: ${borderRadius};
     `;
   }}
 `;

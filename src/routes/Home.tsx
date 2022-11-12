@@ -169,6 +169,153 @@ const Home = () => {
           alt=""
         />
       </Div>
+      <Div
+        display="flex"
+        dir="column"
+        width="100%"
+        backgroundColor={theme.sectionBackground2}
+        align="center"
+        padding="3rem 0"
+        gap="2rem"
+      >
+        <H1>La tecnología que necesitas</H1>
+        <Div
+          display="grid"
+          templateColumns="1fr 1fr 1fr 1fr 1fr 1fr"
+          templateAreas={`
+            "half1 half1 half1 half2 half2 half2"
+            "third1 third1 third2 third2 third3 third3"
+          `}
+          maxWidth="60rem"
+          gap="1rem"
+        >
+          <Div
+            area="half1"
+            objectFit="cover"
+            justify="center"
+            backgroundColor={theme.background}
+            padding="0.5rem"
+            borderRadius="0.5rem"
+            display="flex"
+            dir="column"
+            gap="0.5rem"
+          >
+            <Div
+              display="flex"
+              justify="center"
+              align="center"
+              overflow="hidden"
+              borderRadius="0.25rem"
+            >
+              <Image src="https://cdn-web-home-images.wallapop.com/home-images-prod/image_392_section_418_14281881-6f8e-4f15-bfb8-910971aac70f.jpeg?cacheBuster=NWonDJQbZu8wdz2iJU3fmQ==" />
+            </Div>
+            <H2 color="primary" font="Gentleman-Bold">
+              Ipad
+            </H2>
+            <P>29.961 anuncios</P>
+          </Div>
+          <Div
+            area="half2"
+            objectFit="cover"
+            justify="center"
+            backgroundColor={theme.background}
+            padding="0.5rem"
+            borderRadius="0.5rem"
+            display="flex"
+            dir="column"
+            gap="0.5rem"
+          >
+            <Div
+              display="flex"
+              justify="center"
+              align="center"
+              overflow="hidden"
+              borderRadius="0.25rem"
+            >
+              <Image src="https://cdn-web-home-images.wallapop.com/home-images-prod/image_388_section_420_8b3a0612-5c3e-461a-8ad4-a5a5838f58cd.jpeg?cacheBuster=jN/YqX+s5M7xu8eR0ehyog==" />
+            </Div>
+            <H2 color="primary" font="Gentleman-Bold">
+              Tablet
+            </H2>
+            <P>59.615 anuncios</P>
+          </Div>
+          <Div
+            area="third1"
+            objectFit="cover"
+            justify="center"
+            backgroundColor={theme.background}
+            padding="0.5rem"
+            borderRadius="0.5rem"
+            display="flex"
+            dir="column"
+            gap="0.5rem"
+          >
+            <Div
+              display="flex"
+              justify="center"
+              align="center"
+              overflow="hidden"
+              borderRadius="0.25rem"
+            >
+              <Image src="https://cdn-web-home-images.wallapop.com/home-images-prod/image_390_section_421_3ed2ae78-1df8-4265-9b05-d08584e45c95.jpeg?cacheBuster=ZdLLlH4kQtYiZD+mWqYn9w==" />
+            </Div>
+            <H2 color="primary" font="Gentleman-Bold">
+              Auriculares
+            </H2>
+            <P>93.326 anuncios</P>
+          </Div>
+          <Div
+            area="third2"
+            objectFit="cover"
+            justify="center"
+            backgroundColor={theme.background}
+            padding="0.5rem"
+            borderRadius="0.5rem"
+            display="flex"
+            dir="column"
+            gap="0.5rem"
+          >
+            <Div
+              display="flex"
+              justify="center"
+              align="center"
+              overflow="hidden"
+              borderRadius="0.25rem"
+            >
+              <Image src="https://cdn-web-home-images.wallapop.com/home-images-prod/image_391_section_419_6445353d-efc3-4873-892f-9d96edcde810.jpeg?cacheBuster=V0MXVhv/1hV+LxQufR0biQ==" />
+            </Div>
+            <H2 color="primary" font="Gentleman-Bold">
+              Portátil
+            </H2>
+            <P>97.556 anuncios</P>
+          </Div>
+          <Div
+            area="third3"
+            objectFit="cover"
+            justify="center"
+            backgroundColor={theme.background}
+            padding="0.5rem"
+            borderRadius="0.5rem"
+            display="flex"
+            dir="column"
+            gap="0.5rem"
+          >
+            <Div
+              display="flex"
+              justify="center"
+              align="center"
+              overflow="hidden"
+              borderRadius="0.25rem"
+            >
+              <Image src="https://cdn-web-home-images.wallapop.com/home-images-prod/image_389_section_422_b3395ff0-b3e8-4b1d-817d-9a6591b83587.jpeg?cacheBuster=e7dyUW2p4UHCIutp2JXfFQ==" />
+            </Div>
+            <H2 color="primary" font="Gentleman-Bold">
+              Ordenador sobremesa
+            </H2>
+            <P>8.902 anuncios</P>
+          </Div>
+        </Div>
+      </Div>
     </>
   );
 };

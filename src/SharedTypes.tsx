@@ -41,4 +41,10 @@ export interface DivType {
   rigth?: string;
   zIndex?: string;
   transform?: string;
+  overflow?: string;
+  transition?: string;
+  templateColumns?: string;
+  templateRows?: string;
+  templateAreas?: string;
+  area?: string;
 }

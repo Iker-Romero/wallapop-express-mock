@@ -7,10 +7,11 @@ const H2 = styled.h2`
   font-size: 1.25rem;
 
   ${(props: HeadingType) => {
-    const { color } = props;
+    const { color, font } = props;
 
     return css`
       color: ${color};
+      font-family: ${font};
     `;
   }}
 `;
