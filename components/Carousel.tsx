@@ -51,8 +51,8 @@ const Carousel = (props) => {
         <Div
           display="flex"
           gap="1rem"
-          transform={`translateX(-${currentIndex * 100}%)`}
-          transition="all 250ms linear"
+          transform={`translateX(-${currentIndex * 90}%)`}
+          transition="all 500ms ease-in-out"
         >
           {cards.map((card) => {
             const { img, hover, title } = card;
