@@ -5,17 +5,17 @@ import Div from '../components-ui/Div';
 import P from '../components-ui/P';
 
 const Carousel = (props) => {
-  const { cards } = props;
+  const { cards, cardWidth } = props;
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [lenght, setLenght] = useState(cards.lenght);
+  const [length, setLength] = useState(cards.length);
 
   useEffect(() => {
-    setLenght(cards.lenght);
-  }, [cards.lenght]);
+    setLength(cards.length);
+  }, [cards.length]);
 
   const next = () => {
-    if (currentIndex < lenght - 1) {
+    if (currentIndex < length - 1) {
       setCurrentIndex((prevState) => prevState + 1);
     }
   };
@@ -47,31 +47,33 @@ const Carousel = (props) => {
         </svg>
       </Div>
       {/* Carousel slides */}
-      <Div
-        display="flex"
-        overflow="hidden"
-        gap="1rem"
-        transform={`translateX(-${currentIndex * 100}%)`}
-      >
-        {cards.map((card) => {
-          const { img, hover, title } = card;
+      <Div overflow="hidden">
+        <Div
+          display="flex"
+          gap="1rem"
+          transform={`translateX(-${currentIndex * 100}%)`}
+          transition="all 250ms linear"
+        >
+          {cards.map((card) => {
+            const { img, hover, title } = card;
 
-          return (
-            <Div
-              display="flex"
-              key={title}
-              width="10rem"
-              dir="column"
-              Div="1 0 auto"
-              justify="center"
-              align="center"
-              textAlign="center"
-            >
-              <Image src={img} width="5rem" />
-              <P>{title}</P>
-            </Div>
-          );
-        })}
+            return (
+              <Div
+                display="flex"
+                key={title}
+                width="10rem"
+                dir="column"
+                Div="1 0 auto"
+                justify="center"
+                align="center"
+                textAlign="center"
+              >
+                <Image src={img} width={cardWidth} />
+                <P>{title}</P>
+              </Div>
+            );
+          })}
+        </Div>
       </Div>
       {/* Next Arrow */}
       <Div

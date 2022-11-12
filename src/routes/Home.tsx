@@ -145,7 +145,7 @@ const Home = () => {
         textAlign="center"
       >
         <H1>¿Qué estás buscando hoy?</H1>
-        <Carousel cards={categories} />
+        <Carousel cards={categories} cardWidth="5rem" />
       </Div>
       <Div
         display="flex"

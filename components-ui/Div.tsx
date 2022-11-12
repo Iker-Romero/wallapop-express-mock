@@ -26,6 +26,7 @@ const Div = styled.div`
       zIndex,
       transform,
       overflow,
+      transition,
     } = props;
 
     return css`
@@ -50,6 +51,7 @@ const Div = styled.div`
       z-index: ${zIndex};
       transform: ${transform};
       overflow: ${overflow};
+      transition: ${transition};
     `;
   }}
 `;
