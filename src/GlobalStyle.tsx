@@ -151,6 +151,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: "Gentleman-Regular";
     box-sizing: border-box;
+    font-size: 16px;
   }
 
   #root {

@@ -5,18 +5,21 @@ import theme from '../src/theme';
 interface PType {
   color?: string;
   width?: string;
+  font?: string;
+  size?: string;
 }
 
 const P = styled.p`
   color: ${theme.primary};
-  font-weight: 400;
 
   ${(props: PType) => {
-    const { color, width } = props;
+    const { color, width, size, font } = props;
 
     css`
       color: ${color};
       width: ${width};
+      font-size: ${size};
+      font-family: ${font};
     `;
   }}
 `;

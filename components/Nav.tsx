@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import Image from '../components/Image';
+import Login from '../components/Login';
+import PopUp from '../components/PopUp';
 import Div from '../components-ui/Div';
 import NavStyle from '../components-ui/StyledNav';
 import GlobalStyle from '../src/GlobalStyle';
@@ -9,6 +12,9 @@ import Button from './Button';
 import Input from './Input';
 
 const Nav = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+  console.log(showPopUp);
+  console.log(setShowPopUp);
   return (
     <NavStyle>
       <GlobalStyle />
@@ -29,9 +35,16 @@ const Nav = () => {
         padding="0 1.5rem"
       />
       <Div display="flex" gap="0.5rem">
-        <Button variant="regular">Regístrate o inicia sesión</Button>
+        <Button onClick={() => setShowPopUp(true)} variant="regular">
+          Regístrate o inicia sesión
+        </Button>
         <Button variant="highlight">Subir producto</Button>
       </Div>
+      {showPopUp && (
+        <PopUp show={setShowPopUp}>
+          <Login />
+        </PopUp>
+      )}
     </NavStyle>
   );
 };

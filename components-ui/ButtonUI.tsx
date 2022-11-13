@@ -14,6 +14,19 @@ const ButtonVariants = {
     border: 1px solid ${theme.highlight};
     font-family: 'Gentleman-Bold';
   `,
+  login: css`
+    width: 100%;
+    color: ${theme.primary};
+    background-color: ${theme.background};
+    font-family: 'Gentleman-Bold';
+  `,
+  loginHighlight: css`
+    width: 100%;
+    color: ${theme.primary};
+    background-color: ${theme.highlight};
+    border: 1px solid ${theme.highlight};
+    font-family: 'Gentleman-Bold';
+  `,
 };
 
 const ButtonUI = styled.button`
