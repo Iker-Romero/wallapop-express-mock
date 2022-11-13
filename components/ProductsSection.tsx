@@ -59,7 +59,7 @@ const ProductsSection = ({ section }) => {
               <H2 color="primary" font="Gentleman-Bold">
                 {name}
               </H2>
-              <P>{ads}</P>
+              <P>{`${ads} anuncios`}</P>
             </Div>
           );
         })}
