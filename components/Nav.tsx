@@ -13,8 +13,7 @@ import Input from './Input';
 
 const Nav = () => {
   const [showPopUp, setShowPopUp] = useState(false);
-  console.log(showPopUp);
-  console.log(setShowPopUp);
+
   return (
     <NavStyle>
       <GlobalStyle />

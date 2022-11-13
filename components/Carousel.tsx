@@ -27,7 +27,7 @@ const Carousel = (props) => {
   };
 
   return (
-    <Div display="flex" maxWidth="70rem" position="relative">
+    <Div display="flex" maxWidth="70rem" position="relative" cursor="pointer">
       {/* Previous Arrow */}
       <Div
         display="flex"
@@ -53,9 +53,14 @@ const Carousel = (props) => {
           gap="1rem"
           transform={`translateX(-${currentIndex * 90}%)`}
           transition="all 500ms ease-in-out"
+          align="start"
+          padding="1rem"
+          height="100%"
         >
           {cards.map((card) => {
             const { img, hover, title } = card;
+
+            const [src, setSrc] = useState(img);
 
             return (
               <Div
@@ -64,11 +69,18 @@ const Carousel = (props) => {
                 width="10rem"
                 dir="column"
                 Div="1 0 auto"
-                justify="center"
+                justify="start"
                 align="center"
                 textAlign="center"
+                onMouseOver={() => setSrc(hover)}
+                onMouseOut={() => setSrc(img)}
+                hover="carousel"
+                transition="all 250ms ease-in-out"
+                padding="1rem"
+                borderRadius="1rem"
+                height="100%"
               >
-                <Image src={img} width={cardWidth} />
+                <Image src={src} width={cardWidth} />
                 <P>{title}</P>
               </Div>
             );

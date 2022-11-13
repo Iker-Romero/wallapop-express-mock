@@ -2,6 +2,13 @@ import styled, { css } from 'styled-components';
 
 import { DivType } from '../src/SharedTypes';
 
+const hovers = {
+  carousel: css`
+    transform: translateY(-0.2rem);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  `,
+};
+
 const Div = styled.div`
   ${(props: DivType) => {
     const {
@@ -34,9 +41,16 @@ const Div = styled.div`
       objectFit,
       borderRadius,
       size,
+      hover,
+      cursor,
+      boxShadow,
     } = props;
 
     return css`
+      &:hover {
+        ${hovers[hover]}
+      }
+
       display: ${display};
       flex-direction: ${dir};
       gap: ${gap};
@@ -66,6 +80,8 @@ const Div = styled.div`
       object-fit: ${objectFit};
       border-radius: ${borderRadius};
       font-size: ${size};
+      cursor: ${cursor};
+      boxshadow: ${boxShadow};
     `;
   }}
 `;

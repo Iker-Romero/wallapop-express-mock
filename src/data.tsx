@@ -2,8 +2,7 @@ const data = {
   categories: [
     {
       img: 'https://es.wallapop.com/images/icons/categories/category_All.svg',
-      hover:
-        'https://es.wallapop.com/images/icons/categories/category_MotorAccessories.svg',
+      hover: 'https://es.wallapop.com/images/icons/categories/category_All_hover.svg',
       title: 'Todas las categorías',
     },
     {
@@ -24,7 +23,7 @@ const data = {
       title: 'Motos y Accesorios',
     },
     {
-      img: 'https://es.wallapop.com/images/icons/categories/category_All.svg',
+      img: 'https://es.wallapop.com/images/icons/categories/category_FashionAccessories.svg',
       hover:
         'https://es.wallapop.com/images/icons/categories/category_FashionAccessories_hover.svg',
       title: 'Moda y Accesorios',

@@ -18,7 +18,7 @@ const Home = () => {
         dir="column"
         maxWidth="100%"
         padding="2rem 0"
-        gap="1rem"
+        gap="2rem"
         textAlign="center"
       >
         <H1>¿Qué estás buscando hoy?</H1>
