@@ -40,11 +40,17 @@ const Home = () => {
           </H2>
           <Button variant="highlight">Más información</Button>
         </Div>
-        <Image
-          width="max-content"
-          src="https://es.wallapop.com/images/home/pro/pro-banner.svg"
-          alt=""
-        />
+        <Div
+          media="@media (max-width: 1000px) {
+           display: none;
+          }"
+        >
+          <Image
+            width="max-content"
+            src="https://es.wallapop.com/images/home/pro/pro-banner.svg"
+            alt=""
+          />
+        </Div>
       </Div>
       {data.sections.map((section, i) => (
         <ProductsSection section={section} key={i} />

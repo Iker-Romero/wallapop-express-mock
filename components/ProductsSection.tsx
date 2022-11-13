@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import Div from '../components-ui/Div';
 import H1 from '../components-ui/H1';
 import H2 from '../components-ui/H2';
@@ -68,4 +70,4 @@ const ProductsSection = ({ section }) => {
   );
 };
 
-export default ProductsSection;
+export default memo(ProductsSection);

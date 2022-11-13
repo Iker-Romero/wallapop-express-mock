@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { memo } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import Image from '../components/Image';
@@ -48,4 +49,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

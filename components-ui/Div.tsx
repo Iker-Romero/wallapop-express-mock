@@ -44,12 +44,15 @@ const Div = styled.div`
       hover,
       cursor,
       boxShadow,
+      media,
     } = props;
 
     return css`
       &:hover {
         ${hovers[hover]}
       }
+
+      ${media};
 
       display: ${display};
       flex-direction: ${dir};
