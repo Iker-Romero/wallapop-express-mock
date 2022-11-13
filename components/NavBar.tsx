@@ -13,10 +13,18 @@ const NavBar = ({ show }) => {
   return (
     <>
       <NavLink to="">
-        <Image
-          src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"
-          alt="Wallapop navigation bar logo"
-        />
+        <Div
+          media="@media (max-width: 450px) {
+           width: 100px;
+           object-fit: contain;
+        }"
+        >
+          <Image
+            src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"
+            alt="Wallapop navigation bar logo"
+            width="100%"
+          />
+        </Div>
       </NavLink>
       <Input
         type="text"
@@ -28,7 +36,13 @@ const NavBar = ({ show }) => {
         borderRadius="1.5rem"
         padding="0 1.5rem"
       />
-      <Div display="flex" gap="0.5rem">
+      <Div
+        display="flex"
+        gap="0.5rem"
+        media="@media (max-width: 1000px) {
+           display: none;
+        }"
+      >
         <Button onClick={() => show(true)} variant="regular">
           Regístrate o inicia sesión
         </Button>
