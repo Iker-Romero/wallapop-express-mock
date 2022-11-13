@@ -12,7 +12,9 @@ import theme from '../theme';
 const Home = () => {
   return (
     <>
-      <P>Wallapop, la plataforma líder de compraventa de productos de segunda mano</P>
+      <Div textAlign="center" padding="0 1rem">
+        <P>Wallapop, la plataforma líder de compraventa de productos de segunda mano</P>
+      </Div>
       <Div
         display="flex"
         dir="column"

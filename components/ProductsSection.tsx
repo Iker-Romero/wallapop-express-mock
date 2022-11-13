@@ -19,7 +19,7 @@ const ProductsSection = ({ section }) => {
       width="100%"
       backgroundColor={theme.sectionBackground2}
       align="center"
-      padding="3rem 0"
+      padding="3rem 1rem"
       gap="2rem"
     >
       <H1>{title}</H1>
