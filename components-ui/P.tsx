@@ -14,7 +14,7 @@ const P = styled.p`
 
   ${(props: PType) => {
     const { color, width, size, font } = props;
-    console.log(size);
+
     css`
       color: ${color};
       width: ${width};
