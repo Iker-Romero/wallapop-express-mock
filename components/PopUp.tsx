@@ -7,9 +7,10 @@ const PopUp = (props) => {
   return (
     <Div
       onClick={(e) => e.target === e.currentTarget && show(false)}
-      position="absolute"
-      top="4rem"
-      height="calc(100vh - 4rem)"
+      position="fixed"
+      top="0"
+      zIndex="3"
+      height="100vh"
       width="100%"
       backgroundColor={theme.popUpBackground}
     >

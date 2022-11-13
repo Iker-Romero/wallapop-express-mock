@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import StyledMain from '../components-ui/StyledMain';
 
 const Main = (props: { children: JSX.Element }) => {
@@ -6,4 +8,4 @@ const Main = (props: { children: JSX.Element }) => {
   return <StyledMain>{children}</StyledMain>;
 };
 
-export default Main;
+export default memo(Main);

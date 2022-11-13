@@ -45,6 +45,7 @@ const Div = styled.div`
       cursor,
       boxShadow,
       media,
+      bottom,
     } = props;
 
     return css`
@@ -85,6 +86,7 @@ const Div = styled.div`
       font-size: ${size};
       cursor: ${cursor};
       boxshadow: ${boxShadow};
+      bottom: ${bottom};
     `;
   }}
 `;

@@ -168,6 +168,10 @@ const GlobalStyle = createGlobalStyle`
   p, a {
     line-height: 1.5rem;
   }
+
+  a, button {
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyle;
