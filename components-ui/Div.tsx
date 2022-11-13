@@ -33,6 +33,7 @@ const Div = styled.div`
       area,
       objectFit,
       borderRadius,
+      size,
     } = props;
 
     return css`
@@ -64,6 +65,7 @@ const Div = styled.div`
       grid-area: ${area};
       object-fit: ${objectFit};
       border-radius: ${borderRadius};
+      font-size: ${size};
     `;
   }}
 `;

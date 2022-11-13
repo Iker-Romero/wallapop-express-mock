@@ -11,7 +11,7 @@ const PopUp = (props) => {
       top="4rem"
       height="calc(100vh - 4rem)"
       width="100%"
-      backgroundColor="rgba(0, 0, 0, 0.25)"
+      backgroundColor={theme.popUpBackground}
     >
       <Div
         position="fixed"

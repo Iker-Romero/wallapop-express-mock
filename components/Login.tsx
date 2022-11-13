@@ -1,7 +1,9 @@
 import Button from '../components/Button';
+import A from '../components-ui/A';
 import Div from '../components-ui/Div';
 import H2 from '../components-ui/H2';
 import P from '../components-ui/P';
+import theme from '../src/theme';
 
 const Login = () => {
   return (
@@ -69,8 +71,20 @@ const Login = () => {
             O continúa con tu email
           </Div>
         </Button>
+        <P>
+          ¿Ya tienes una cuenta?{' '}
+          <A font="Gentleman-Bold" color={theme.highlight} hoverColor={theme.secondary}>
+            Inicia sesión
+          </A>
+        </P>
       </Div>
-      <Div display="flex" dir="column" gap="1rem"></Div>
+      <Div display="flex" dir="column" size="0.625rem">
+        <P>Registrándote aceptas nuestras</P>
+        <P>
+          <A borderBottom="1px solid">Condiciones de uso</A> y{' '}
+          <A borderBottom="1px solid">Política de privacidad</A>
+        </P>
+      </Div>
     </Div>
   );
 };

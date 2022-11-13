@@ -137,13 +137,13 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Gentleman-Bold";
     src: url(/fonts/Gentleman-Bold.woff);
-    font-display: block;
+    /* font-display: block; */
   }
   
   @font-face {
     font-family: "Gentleman-Regular";
     src: url(/fonts/Gentleman-Regular.woff);
-    font-display: block;
+    /* font-display: block; */
   }
 
   :root {
