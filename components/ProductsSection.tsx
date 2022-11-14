@@ -21,6 +21,7 @@ const ProductsSection = ({ section }) => {
       align="center"
       padding="3rem 1rem"
       gap="2rem"
+      textAlign="center"
     >
       <H1>{title}</H1>
       <Div

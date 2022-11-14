@@ -22,7 +22,9 @@ const PopUp = (props) => {
         display="flex"
         dir="column"
         padding="2rem"
+        min-width="10rem"
         maxWidth="30rem"
+        width="max-content"
         backgroundColor={theme.background}
         borderRadius="1rem"
       >
