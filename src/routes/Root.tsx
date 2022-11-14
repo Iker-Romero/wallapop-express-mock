@@ -1,11 +1,8 @@
 import { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import Button from '../../components/Button';
 import Footer from '../../components/Footer';
-import Image from '../../components/Image';
-import Input from '../../components/Input';
 import Login from '../../components/Login';
 import Main from '../../components/Main';
 import Nav from '../../components/Nav';

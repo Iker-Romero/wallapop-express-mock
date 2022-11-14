@@ -1,15 +1,9 @@
-import { memo, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { memo } from 'react';
 
-import Image from '../components/Image';
-import Login from '../components/Login';
-import PopUp from '../components/PopUp';
 import A from '../components-ui/A';
 import Div from '../components-ui/Div';
 import P from '../components-ui/P';
 import theme from '../src/theme';
-import Button from './Button';
-import Input from './Input';
 
 const TabBar = ({ show }) => {
   return (
