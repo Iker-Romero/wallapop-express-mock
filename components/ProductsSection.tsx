@@ -32,6 +32,13 @@ const ProductsSection = ({ section }) => {
           `}
         maxWidth="60rem"
         gap="1rem"
+        media="@media (max-width: 750px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          object-fit: contain;
+          width: 100%;
+        }"
       >
         {products.map((product, i) => {
           const { img, name, ads } = product;
@@ -48,6 +55,10 @@ const ProductsSection = ({ section }) => {
               display="flex"
               dir="column"
               gap="0.5rem"
+              media="@media (max-width: 750px) {
+                min-width: 12rem;
+                max-width: 16rem;
+              }"
             >
               <Div
                 display="flex"
