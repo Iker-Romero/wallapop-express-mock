@@ -13,6 +13,10 @@ const StyledFooter = styled.footer`
   gap: 2rem;
   padding: 2rem;
 
+  @media (max-width: 1000px) {
+    margin-bottom: 4rem;
+  }
+
   ${(props: FooterType) => {
     const { maxWidth, justify, alignSelf } = props;
 

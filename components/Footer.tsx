@@ -8,7 +8,7 @@ import StyledFooter from '../components-ui/StyledFooter';
 const Footer = () => {
   return (
     <StyledFooter maxWidth="70rem" alignSelf="center">
-      <Div display="flex" wrap="wrap" gap="1rem" justify="center">
+      <Div display="flex" wrap="wrap" gap="1rem" justify="space-between">
         <Div display="flex" dir="column" width="min-content">
           <Image
             src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"

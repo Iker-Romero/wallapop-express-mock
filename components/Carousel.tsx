@@ -66,7 +66,7 @@ const Carousel = (props) => {
               <Div
                 display="flex"
                 key={title}
-                width="10rem"
+                width={cardWidth}
                 dir="column"
                 Div="1 0 auto"
                 justify="start"
