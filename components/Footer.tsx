@@ -23,7 +23,9 @@ const Footer = () => {
           <A>Cómo funciona</A>
           <A>Brand Book</A>
           <A>Prensa</A>
-          <A>Empleo</A>
+          <A href="https://www.linkedin.com/in/iker-romero-645b70251/" target="_black">
+            Empleo
+          </A>
         </Div>
         <Div display="flex" dir="column" gap="1rem">
           <H3>Soporte</H3>

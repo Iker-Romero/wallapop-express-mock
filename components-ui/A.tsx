@@ -11,6 +11,12 @@ interface AType {
 }
 
 const A = styled.a`
+  text-decoration: none;
+
+  &:visited {
+    all: unset;
+  }
+
   ${({ color, hoverColor, font, borderBottom, size }: AType) =>
     css`
       color: ${color};
