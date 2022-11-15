@@ -68,7 +68,7 @@ const Carousel = (props) => {
                 key={title}
                 width={cardWidth}
                 dir="column"
-                Div="1 0 auto"
+                flex="1 0 auto"
                 justify="start"
                 align="center"
                 textAlign="center"
@@ -80,7 +80,7 @@ const Carousel = (props) => {
                 borderRadius="1rem"
                 height="100%"
               >
-                <Image src={src} width={cardWidth} />
+                <Image src={src} width="50%" />
                 <P>{title}</P>
               </Div>
             );
