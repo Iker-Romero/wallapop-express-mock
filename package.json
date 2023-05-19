@@ -1,6 +1,9 @@
 {
   "name": "vite-reactts-eslint-prettier",
   "version": "0.0.0",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

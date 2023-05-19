@@ -8,6 +8,7 @@ import Button from './Button';
 import Input from './Input';
 
 const NavBar = ({ show }) => {
+  console.log('NavBar');
   return (
     <>
       <NavLink to="">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 
 import Image from '../components/Image';
 import Div from '../components-ui/Div';
@@ -6,6 +6,7 @@ import P from '../components-ui/P';
 
 const Carousel = (props) => {
   const { cards, cardWidth } = props;
+  console.log('cards', cards);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(cards.length);
@@ -112,4 +113,4 @@ const Carousel = (props) => {
   );
 };
 
-export default Carousel;
+export default memo(Carousel);
