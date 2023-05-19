@@ -29,13 +29,15 @@ const ButtonVariants = {
   `,
 };
 
+type ButtonVariant = 'regular' | 'highlight' | 'login' | 'loginHighlight';
+
 const ButtonUI = styled.button`
   width: fit-content;
   height: 3rem;
   border-radius: 1.5rem;
   padding: 0 1.5rem;
 
-  ${(props) => ButtonVariants[props.variant]}
+  ${({ variant }: { variant: ButtonVariant }) => ButtonVariants[variant]}
 `;
 
 export default ButtonUI;

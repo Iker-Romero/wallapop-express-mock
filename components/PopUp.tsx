@@ -1,12 +1,19 @@
+import { MouseEvent, ReactNode } from 'react';
+
 import Div from '../components-ui/Div';
 import theme from '../src/theme';
 
-const PopUp = (props) => {
-  const { children, show } = props;
+type Props = {
+  children: ReactNode;
+  show: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
+const PopUp = ({ children, show }: Props) => {
   return (
     <Div
-      onClick={(e) => e.target === e.currentTarget && show(false)}
+      onClick={(e: MouseEvent<HTMLDivElement>) =>
+        e.target === e.currentTarget && show(false)
+      }
       position="fixed"
       top="0"
       zIndex="3"

@@ -17,6 +17,7 @@ export interface InputType extends InputAndButton {
 
 export interface HeadingType {
   color: string;
+  font: string;
 }
 
 export interface DivType {
@@ -33,7 +34,6 @@ export interface DivType {
   padding?: string;
   flex?: string;
   margin?: string;
-  overflow?: string;
   textAlign?: string;
   position?: string;
   top?: string;
@@ -47,4 +47,13 @@ export interface DivType {
   templateRows?: string;
   templateAreas?: string;
   area?: string;
+  right?: string;
+  objectFit?: string;
+  borderRadius?: string;
+  size?: string;
+  hover?: 'carousel';
+  cursor?: string;
+  boxShadow?: string;
+  media?: string;
+  bottom?: string;
 }

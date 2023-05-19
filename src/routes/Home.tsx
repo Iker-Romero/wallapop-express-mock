@@ -55,7 +55,7 @@ const Home = () => {
         </Div>
       </Div>
       {data.sections.map((section, i) => (
-        <ProductsSection section={section} key={i} />
+        <ProductsSection {...{ section }} key={i} />
       ))}
     </>
   );

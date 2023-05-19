@@ -4,10 +4,12 @@ import Image from '../components/Image';
 import Div from '../components-ui/Div';
 import P from '../components-ui/P';
 
-const Carousel = (props) => {
-  const { cards, cardWidth } = props;
-  console.log('cards', cards);
+type Props = {
+  cards: { img: string; hover: string; title: string }[];
+  cardWidth: string;
+};
 
+const Carousel = ({ cards, cardWidth }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(cards.length);
 
@@ -91,10 +93,7 @@ const Carousel = (props) => {
       {/* Next Arrow */}
       <Div
         display="flex"
-        onClick={() => {
-          console.log('next');
-          next();
-        }}
+        onClick={next}
         justify="center"
         align="center"
         zIndex="2"

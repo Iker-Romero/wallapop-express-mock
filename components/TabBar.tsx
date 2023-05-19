@@ -5,7 +5,11 @@ import Div from '../components-ui/Div';
 import P from '../components-ui/P';
 import theme from '../src/theme';
 
-const TabBar = ({ show }) => {
+type Props = {
+  show: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const TabBar = ({ show }: Props) => {
   return (
     <Div
       position="fixed"

@@ -1,10 +1,15 @@
+import { ReactNode } from 'react';
+
 import ButtonUI from '../components-ui/ButtonUI';
-import { ButtonType } from '../src/SharedTypes';
 
-const Button = (props: ButtonType) => {
-  const { children } = props;
+type Props = {
+  children: ReactNode;
+  variant?: 'regular' | 'highlight' | 'login' | 'loginHighlight';
+  onClick?: () => void;
+};
 
-  return <ButtonUI {...props}>{children}</ButtonUI>;
+const Button = ({ children, ...rest }: Props) => {
+  return <ButtonUI {...rest}>{children}</ButtonUI>;
 };
 
 export default Button;

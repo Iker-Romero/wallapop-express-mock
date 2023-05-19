@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import Image from '../components/Image';
@@ -7,16 +7,19 @@ import theme from '../src/theme';
 import Button from './Button';
 import Input from './Input';
 
-const NavBar = ({ show }) => {
-  console.log('NavBar');
+type Props = {
+  show: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const NavBar = ({ show }: Props) => {
   return (
     <>
       <NavLink to="">
         <Div
           media="@media (max-width: 450px) {
-           width: 100px;
-           object-fit: contain;
-        }"
+            width: 100px;
+            object-fit: contain;
+            }"
         >
           <Image
             src="https://es.wallapop.com/images/logos/logo-wallapop-home-v2.svg"
@@ -46,7 +49,7 @@ const NavBar = ({ show }) => {
         display="flex"
         gap="0.5rem"
         media="@media (max-width: 1000px) {
-           display: none;
+          display: none;
         }"
       >
         <Button onClick={() => show(true)} variant="regular">

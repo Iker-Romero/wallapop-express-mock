@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { ImageType } from '../components/Image';
+
 const StyledImage = styled.img`
   object-fit: contain;
 

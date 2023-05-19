@@ -1,11 +1,12 @@
 import StyledImage from '../components-ui/StyledImage';
 
-interface ImageType {
+export interface ImageType {
   src?: string;
   alt?: string;
   height?: string;
   width?: string;
   Div?: string;
+  flex?: string;
 }
 
 const Image = (props: ImageType) => {

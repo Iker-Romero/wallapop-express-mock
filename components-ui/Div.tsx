@@ -50,7 +50,7 @@ const Div = styled.div`
 
     return css`
       &:hover {
-        ${hovers[hover]}
+        ${hover ? hovers[hover] : ''}
       }
 
       ${media};

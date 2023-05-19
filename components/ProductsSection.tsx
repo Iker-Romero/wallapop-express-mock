@@ -7,9 +7,11 @@ import P from '../components-ui/P';
 import theme from '../src/theme';
 import Image from './Image';
 
-const ProductsSection = ({ section }) => {
-  const { title, products } = section;
+type Props = {
+  section: { title: string; products: { img: string; name: string; ads: number }[] };
+};
 
+const ProductsSection = ({ section: { title, products } }: Props) => {
   const areas = ['half1', 'half2', 'third1', 'third2', 'third3'];
 
   return (

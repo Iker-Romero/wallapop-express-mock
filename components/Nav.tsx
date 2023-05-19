@@ -1,8 +1,12 @@
-import { memo } from 'react';
+import { memo, ReactNode } from 'react';
 
 import NavStyle from '../components-ui/StyledNav';
 
-const Nav = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+
+const Nav = ({ children }: Props) => {
   return <NavStyle>{children}</NavStyle>;
 };
 

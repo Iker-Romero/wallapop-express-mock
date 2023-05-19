@@ -7,7 +7,7 @@ interface AType {
   hoverColor?: string;
   font?: string;
   borderBottom?: string;
-  size?: size;
+  size?: string;
 }
 
 const A = styled.a`
