@@ -2,7 +2,7 @@ const data = {
   categories: [
     {
       img: '/images/carousel/category_All.svg',
-      hover: '/category_All_hover.svg',
+      hover: '/images/carousel/category_All_hover.svg',
       title: 'Todas las categorías',
     },
     {
